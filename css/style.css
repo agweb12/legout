@@ -1,0 +1,279 @@
+:root{
+    --textprimary-color: #fff;
+    --main-color: #00d18b;
+    --reserve-color: #00b0e6;
+    --second-color: #121212;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+h1{
+    text-transform: capitalize;
+    color: var(--textprimary-color);
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 5% 0%;
+}
+h1 em{
+    font-style: normal;
+}
+h2{
+    color: var(--textprimary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+h3{
+    color: var(--second-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+a{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+header nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #121212c5;
+    padding: 10px 20px;
+    border-bottom: 3px solid  #8a8a8a7a;
+    z-index: 1000;
+}
+
+header nav a.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li a{
+    color: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover{
+    color: white;
+}
+
+header nav ul li a.active{
+    color: white;
+}
+
+header nav ul button{
+    background-color: transparent;
+    padding: 10px;
+    border: .01rem solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul button:hover{
+    background-color: var(--main-color);
+    color: white;
+    border: .01rem solid white;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    background-image: url('../img/banniere2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.presentation .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.presentation .box .box1{
+    position: absolute;
+    bottom: 40%;
+    right: 15%;
+    width: 35%;
+}
+.commande{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+}
+.presentation .box .box1 .commande button{
+    background-color: transparent;
+    padding: 10px;
+    border: .01rem solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.presentation .box .box1 .commande button.reserve{
+    color: var(--reserve-color);
+    border: .01rem solid var(--reserve-color);
+}
+.presentation .box .box1 .commande button:hover{
+    background-color: var(--main-color);
+    color: white;
+    border: .01rem solid white;
+}
+.presentation .box .box1 .commande button.reserve:hover{
+    background-color: var(--reserve-color);
+    color: white;
+    border: .01rem solid white;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+    background-image: url('../img/banniere5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu .lescartes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu .carte{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    gap: 2%;
+    background-color: white;
+    margin: 100px;
+}
+
+.menu .carte.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2%;
+    background-color: white;
+    margin: 20px;
+}
+
+.menu .lescartes img{
+    width: 50%;
+}
+
+.menu .lescartes .carte .box-menu{
+    padding: 1%;
+}
+
+.menu .lescartes .carte .box-menu p{
+    font-size: .9rem;
+}
+
+.menu .lescartes .carte .box-menu .box-date p{
+    color: #8a8a8a;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: .5% 3%;
+}
+
+.nosvarietes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+    background-image: url('../img/banniere.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nosvarietes .box-varietes-title{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border: 2px solid #1212121f !important;
+    background-color: #12121231;
+}
+
+.nosvarietes .box-varietes-title .box-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 5% 0%;
+}
+.btn-light{
+    color: grey;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link.disabled{
+    text-decoration: none;
+    color: white;
+}
+
+.card{
+    box-shadow: 0px 0px 17px #600472;
+}
+
+.formulairecommande{
+    height: 100%;
+    background-image: url('../img/banniere7.jpg');
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.formulairecommande .box-relative{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
